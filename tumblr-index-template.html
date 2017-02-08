@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta name="text:Google Analytics ID" content=''/>
+	    {block:Description}
+	    	<meta name="description" content="{MetaDescription}" />
+	    {/block:Description}
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	    <title>{block:TagPage}{Tag} posts - {/block:TagPage} {block:SearchPage}{lang:Search results for SearchQuery} - {/block:SearchPage}{block:PostSummary}{PostSummary} - {/block:PostSummary}{Title}</title>
+	    <link rel="shortcut icon" href="{Favicon}">
+	    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+	    <link href="http://static.tumblr.com/wgijwsy/k1Hm9ei8b/normalize.css" rel="stylesheet" type="text/css" />
+
+		<link href="http://static.tricky.nu/tumblr/css/reset.css" rel="stylesheet" type="text/css" />
+		<link href="http://static.tricky.nu/tumblr/css/beigy-responsive.css" rel="stylesheet" type="text/css" />
+
+		<link href='https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		
+		{block:Twitter}
+			<script type="text/javascript">
+			    function recent_tweets(data) {
+			        for (i=0; i<1; i++) {
+			            document.getElementById("tweet").innerHTML =
+			                document.getElementById("tweet").innerHTML +
+			                '<a href="http://twitter.com/{TwitterUsername}/status/' +
+			                (data[i].id_str ? data[i].id_str : data[i].id) +
+			                '"><div class="content">' + data[i].text +
+			                '</div></a><a class="alt" href="http://twitter.com/{TwitterUsername}/status">follow me on twitter</a>';
+			        }
+			        document.getElementById("twitter").style.display = 'block';
+			    }
+			</script>
+		{/block:Twitter}
+	</head>
+
+	<body>
+		<div id="top"></div>
+		<div id="wrapper">
+			<div id="container">
+				<div class="string-bg"></div>
+				<div id="side">
+					<div id="header">
+						<a href="/" id="userlink">{title}</a>
+					</div><!-- end header -->
+
+					<div id="menu">
+						<ul class="no_change">
+							<li><a href="http://latherrinserepeat.org/ask" class="ask">ask</a></li>
+							<li><a href="http://girl.latherrinserepeat.org/" class="girl">girl</a></li>
+							<li><a href="http://site.latherrinserepeat.org/" class="site">site</a></li>
+							<li><a href="http://latherrinserepeat.org/archive" class="past">past</a></li>
+							<li><a href="http://feeds.latherrinserepeat.org/all_articles/" class="rss">RSS</a></li>
+						</ul>
+					</div><!-- end menu -->
+
+					<div id="search">
+						<form action="/search" method="get">
+						    <input type="text" name="q" value="{SearchQuery}"/>
+						</form>
+					</div><!-- end search -->
+				</div><!-- end side -->
+
+				<div id="twitter">
+					<div id="tweet"></div>
+				</div>
+
+				<div id="content">
+					<span class="kitty-paw"></span>
+					<a class="kitty" href="/"></a>
+						
+					<div class="autopagerize_page_element">
+						{block:Posts}
+							<div class="post {TagsAsClasses}">
+								<div class="meta-notes">
+									<div class="note-wrapper">
+										<div class="custom-like-button">
+							        		{LikeButton}
+							        		<span class="our_button"></span>
+							    		</div>
+							    		<a href="{Permalink}" class="note-permalink">
+											<span class="note-middle">
+									  			Permalink &raquo;
+									  		</span>
+										</a>
+										<span class="note-end"></span>
+									</div>
+								</div>
+
+								<div class="post-wrapper">
+									{block:Title}<h1><a href="{Permalink}">{Title}</a></h1>{/block:Title}
+
+									{block:Regular}
+										<div class="regular">
+											{Body}
+										</div>
+									{/block:Regular}
+
+									{block:Photo}
+										<div class="photo">
+											{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{LinkCloseTag}
+											<div class="caption">
+												{Caption}
+											</div>
+										</div>
+									{/block:Photo}
+
+									{block:Quote}
+										<div class="quote">
+											<div class="quoteactual">{Quote}</div>
+											{block:Source}<div class="source">&#8212; {Source}</div>{/block:Source}
+										</div>
+									{/block:Quote}
+
+									{block:Link}
+										<div class="link">
+											<a href="{URL}" class="link" {Target}>{Name}</a>
+											<div class="description">
+												{Description}
+											</div>
+										</div>
+									{/block:Link}
+
+									{block:Conversation}
+										<div class="conversation">
+											<ul class="no_change">
+												{block:Lines}
+													<li class="{Alt}">
+														{block:Label}<span class="label">{Label}</span>{/block:Label}
+														{Line}
+													</li>
+												{/block:Lines}
+											</ul>
+										</div>
+									{/block:Conversation}
+
+									{block:Audio}
+										<h1><a href="{Permalink}">{block:Artist}{Artist}{/block:Artist} - {block:TrackName}{TrackName}{/block:TrackName}</a></h1>{/block:Artist}
+										<div class="audio">
+											{AudioPlayerGrey}
+											<div class="caption">
+												{block:Caption}{Caption}{/block:Caption}{block:ExternalAudio} [<a href="{ExternalAudioURL}">Download</a>]{/block:ExternalAudio}
+											</div>
+										</div>
+									{/block:Audio}
+
+									{block:Video}
+										<div class="video">
+											{Video-500}
+											<div class="caption">{Caption}</div>
+										</div>
+									{/block:Video}
+
+									{block:Answer}
+										<div class="answer">
+											<div class="question">{Question}</div>
+											<div class="asker">&#8212; {Asker}</div>
+											<div class="answer">{Answer}</div>
+											<p><a href="http://latherrinserepeat.org/ask">Ask me anything!</p>
+										</div>
+									{/block:Answer}
+
+									{block:RebloggedFrom}
+										<div class="notes">
+											<p>Reblogged from <a href="{ReblogParentURL}">{ReblogParentTitle}</p>
+										</div>
+									{/block:RebloggedFrom}
+
+									{PostNotes}
+
+									{block:HasTags}
+										<ul class="tags clearfix no_change">
+											<li>Tags</li>
+											{block:Tags}
+												<li>
+													<a href="{TagURL}">#{Tag}</a>
+												</li>
+											{/block:Tags}
+										</ul>
+									{/block:HasTags}
+
+								</div><!-- end of post wrapper -->
+							</div><!-- end of autopagerize_page_element -->
+						{/block:Posts}
+					</div><!-- end post -->
+				  
+					{block:PermalinkPage}
+					  	{block:PermalinkPagination} 
+						  	<div id="pager" class="clearfix">
+						  		{block:NextPost}<a href="{NextPost}" class="right">forward</a>{/block:NextPost} 
+						  		{block:PreviousPost}<a href="{PreviousPost}" class="left">rewind</a>{/block:PreviousPost}
+						  	</div>
+					  	{/block:PermalinkPagination}
+					{/block:PermalinkPage}
+
+					{block:IndexPage} 
+						{block:Pagination} 
+							<div id="pager" class="clearfix">
+								{block:NextPage}<a href="{NextPage}" class="right">forward</a>{/block:NextPage} 
+								{block:PreviousPage}<a href="{PreviousPage}" class="left">rewind</a>{/block:PreviousPage}
+							</div>
+						{/block:Pagination}
+					{/block:IndexPage}
+
+					<div id="footer">
+						Copyright Liz
+					</div>
+
+				</div><!-- end of #content -->
+
+			</div><!-- end of #container -->
+		</div><!-- end of #wrapper -->
+		
+		<script src="http://static.tricky.nu/tumblr/js/jquery-1.8.0.min.js" type="text/javascript"></script>
+		
+		<script src="http://static.tricky.nu/tumblr/js/jquery.sticky-kit.min.js" type="text/javascript"></script>
+		
+		<script src="http://static.tricky.nu/tumblr/js/boxes.js" type="text/javascript"></script>
+		<script type="text/javascript" src="http://codysherman.tumblr.com/tools/infinite-scrolling/code"></script>
+
+		{block:Twitter}
+		    <script type="text/javascript" src="/tweets.js"></script>
+		{/block:Twitter}
+	</body>
+</html>

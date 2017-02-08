@@ -1,0 +1,1043 @@
+body {
+	background:#eae9e4 url(http://static.tricky.nu/tumblr/images/bg.png) 0 0 repeat;
+	color: #828283;
+	font-size: 15px;
+	line-height: 23px;
+	font-family: 'Arvo', "Helvetica Neue", Arial, Helvetica, Geneva, serif;
+	font-weight: 400;
+}
+
+* {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+a img, a.visited img {
+	border: 0px;
+}
+
+strong {
+	font-weight: bold !important;
+}
+
+a {
+	text-decoration: none;
+	color: #95bc82;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #828283 !important;
+}
+
+.spolier {
+	color: #64BFE3;
+	background: #64BFE3;
+}
+
+.blue, .heart {
+	color: #64BFE3;
+}
+
+.heart {
+    font-size:1.5em;
+}
+
+.tiny {
+	font-size: 11px;
+	font-weight: 600;
+	text-transform:uppercase;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.hide{
+	display:none;
+}
+
+/* ------------------ clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+/* ------------------ layout */
+
+#wrapper{
+	width: 100%;
+	padding-top:50px;
+	position:relative;	
+}
+
+.string-bg.long{
+	background:transparent url(http://static.tricky.nu/tumblr/images/string-bg-long.png) no-repeat 0 0;
+	background-size:748px 188px;
+	position:fixed;
+	width:748px;
+	height:188px;
+	top: 160px;
+	left: 205px;
+}
+
+.string-bg{
+	background:transparent url(http://static.tricky.nu/tumblr/images/string-bg.png) no-repeat 0 0;
+	background-size:652px 188px;
+	position:fixed;
+	width:652px;
+	height:188px;
+	top: 160px;
+	left: 205px;
+}
+
+#container {
+	margin: -30px auto 0 auto;
+	overflow:hidden;
+}
+
+#content {
+	width: 560px;
+	min-height:275px;
+	margin: 180px 0 0 40px;
+	z-index: 1;
+	text-align: left;
+	position:relative;
+	padding-left:50px;
+	background:transparent url(http://static.tricky.nu/tumblr/images/kittybeigebody.png) no-repeat left -35px;
+	background-size:216px 207px;
+
+}
+
+.kitty {
+	background: url(http://static.tricky.nu/tumblr/images/kittybeigehead.png) no-repeat;
+	background-size:214px 171px;
+	width: 214px;
+	height: 171px;
+	position: absolute;
+	top: -125px;
+	left: 0;
+	display: block;
+	z-index:5;
+}
+
+.kitty-paw{
+	position:absolute;
+	top:6px;
+	left:18px;
+	display:block;
+	background: url(http://static.tricky.nu/tumblr/images/kittybeigepaw.png) no-repeat;
+	background-size:105px 57px;
+	width:105px;
+	height:57px;
+	z-index:3;
+}
+
+#side{
+	width:345px;
+	left:665px;
+	top:0;
+	position:absolute;
+}
+
+#content .meta {
+	margin: 0px;
+	margin-bottom: 10px;
+	text-transform: uppercase !important;
+	color: #bababa;
+	font-size: 11px;
+	font-weight: 600;
+	width: 100%;
+}
+
+h1, h1 a {
+	font-weight: 900;
+	font-size: 30px;
+	color: #92ccd8;
+	margin-bottom: 6px;
+	line-height: 38px;
+	 -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.90);
+	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+h2, h2 a, h3 {
+	font-weight: 300;
+	font-size: 26px;
+	color: #666;
+	margin-top: 15px;
+	line-height: 30px;
+}
+
+h2 a{
+	color:#95bc82;
+}
+
+h4 {
+	font-weight: 300;
+	font-size: 26px;
+	color: #bababa;
+	margin-top: 10px;
+	line-height: 30px;
+}
+
+h3 a{
+	font-weight: 400;
+	color: #bababa;
+}
+
+h5, h5 a{
+	font-size: 16px;
+	margin-top: 25px;
+	margin-bottom: -8px;
+	line-height:18px;
+	color:#95bc82;
+}
+
+h5 span, h5 a span{
+	color: #bababa;
+	font-weight: 300;
+}
+
+.post {
+	margin: 0px 0 20px 0;
+	padding: 50px 30px 5px 30px;
+	text-align: left !important;
+	position:relative;
+	background:#fff;
+}
+
+.post-wrapper{
+	overflow:hidden;
+}
+
+.post:first-of-type{
+	padding-top:65px;
+}
+
+.post .pimg {
+	text-align: center;
+	display: block;
+}
+
+.post .pimg img, .photo img {
+	max-width: 500px;
+	margin: 5px auto !important;
+}
+
+.post .pmg img, .post .photo img {
+	text-align: center !important;
+	display: block !important;
+}
+
+.post p {
+	text-align: left;
+	margin: 10px 0;
+	line-height:20px;
+}
+
+.post ul {
+	margin: 15px 0 5px 0;
+}
+
+.post ul li{
+    margin-right:15px;
+    margin-top:5px;
+}
+
+.post blockquote{
+	margin:5px 10px 15px 10px;
+	background:#fff;
+	padding:0 8px;
+}
+
+.post .tags {
+	margin: 35px 0 0 0;
+	font-size: 10px;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height:12px;
+}
+
+.post .tags li {
+	float: left;
+	padding-right: 8px;
+	padding-left: 0 !important;
+}
+
+.post .tags a {
+	color: #bababa;
+	font-weight: 700 !important;
+	padding: 0 2px;
+}
+
+.post .tags a:hover {
+	background: #eee;
+	font-weight: 700 !important;
+	padding: 0 2px;
+}
+
+.post div.quote div.quoteactual, 
+.post div.quote span.quoteactual a, 
+.post div.answer div.question, 
+.post h4 {
+	color: #9c9c9c;
+	font-size: 28px;
+	font-weight: 300;
+	line-height: 33px;
+	text-align:left !important;
+}
+
+.post div.quote div.quoteactual p {
+	line-height:33px;
+}
+
+.post div.question, .post div.link{
+    overflow:hidden;
+    padding-bottom:5px;
+}
+
+.post div.quote .source, .post div.answer div.asker {
+	color: #777A7E;
+	text-align: right;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.post div.quote .source a, .post div.answer div.asker a {
+	color: #888;
+}
+
+.post .link a.link {
+	font-size: 28px;
+	font-weight: 300;
+	color: #bababa;
+	line-height: 28px;
+}
+
+.post .link .description {
+	margin-top: 10px;
+}
+
+.post .conversation ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.post .conversation ul li span.label {
+	font-weight: bold !important;
+}
+
+.post .conversation ul li.odd {
+	background-color: #eee;
+	margin-bottom: 1px;
+	padding: 0px 8px;
+}
+
+.post .conversation ul li.even {
+	background-color: #fff;
+	margin-bottom: 1px;
+	padding: 0px 8px;
+}
+
+.post .audio .caption {
+	margin-top: 5px;
+}
+
+.post .video {
+	text-align:center;
+}
+
+.post img{
+    display:block;
+    text-align:center;
+}
+
+.post .photo, .post .video{
+
+}
+
+.post .video .caption {
+	margin-top: 10px;
+	text-align:left;
+}
+
+.post .photo .caption {
+	margin-top: 15px;
+	text-align:left !important;
+}
+
+#pagination {
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+#pagination a {
+	color: #fff;
+	text-decoration: none;
+	background-color: #444;
+	padding: 2px;
+	text-transform: uppercase;
+	margin-top: 5px;
+}
+
+#pagination a:hover {
+	background-color: #444;
+}
+
+#pager {
+	margin-bottom: 10px;
+}
+
+#permalinkpager {
+    position:absolute;
+    right:-78px;
+    top:0;
+} 
+
+#permalinkpager a {
+    display:block;
+    margin-bottom:10px;
+    text-align:center;
+}
+
+#permalinkpager a, #pager a {
+	color: #888;
+	text-transform: uppercase;
+	font-size: 11px;
+	padding: 0 3px;
+	font-weight: 600;
+	background: #fff;
+}
+
+#permalinkpager a:hover,#pager a:hover {
+	background: #888;
+	padding: 0 3px;
+	color: #fff !important;
+}
+
+/* ------------------ header */
+
+#header {
+	width: 348px;
+	height: 497px;
+	background: transparent;
+	z-index: 15;
+	/*margin:25px 0 5px 0;*/
+	margin:0 0 5px 0;
+}
+
+#header a {
+	background: url(http://static.tricky.nu/tumblr/images/kitty-title2.png) top left no-repeat;
+	background-size:354px 498px;
+	text-indent: -99999px !important;
+	width: 354px;
+	height: 498px;
+	display: block;
+}
+
+/* ------------------ menu */
+
+#menu {
+	z-index: 14;
+	text-transform: lowercase;
+	padding-left:45px;
+	margin-top:15px;
+}
+
+#menu ul {
+	overflow:hidden;
+}
+
+#menu li {
+	list-style-type: none;
+	float:left;
+	margin-right:25px;
+	margin-bottom:30px;
+}
+
+#menu li a {
+	color: #828283 !important;
+	font-weight: 300;
+	display: block;
+	font-size: 22px;
+	line-height: 20px;
+	margin-top: 1px;
+}
+
+#menu li a:hover {
+	color:#9c9c9c !important;
+}
+
+#menu li:last-child {
+	margin-right:0;
+}
+
+#footer {
+	text-align: left;
+	margin-bottom: 0;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #ababab;
+	font-weight: bold;
+}
+
+#footer a{ color:#777; }
+
+#twitter {
+	width:325px;
+	position:absolute;
+	top:20px;
+	left:275px;
+}
+
+#twitter a {
+	font-weight: normal;
+}
+
+#tweet {
+	padding: 10px 15px 5px 15px;
+	font-size: 20px;
+	color: #bababa;
+	-moz-border-radius: 23px;
+	-webkit-border-radius: 23px;
+	background: #fff;
+	min-height: 75px;
+	font-weight: 300;
+	height: auto;
+	overflow: hidden;
+	text-align: left;
+	width:300px;
+	font-size:14px;
+	line-height:17px;
+}
+
+#twitter .alt {
+	font-size:11px;
+	color:#92ccd8;
+	font-weight:700;
+	text-transform:uppercase;
+	margin-bottom:3px;
+}
+
+#tweet:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent #FFFFFF;
+	display: block;
+	width: 0;
+	z-index: 1;
+	left: -9px;
+	top: 50px;
+}
+
+#tweet ul {
+    overflow:hidden;
+}
+
+pre {
+	overflow: scroll;
+}
+
+/* for Internet Explorer */
+
+/*\*/
+
+* html #tweet {
+	height: 90px;
+}
+
+/**/
+
+.tweet_text {
+	margin: ;
+}
+
+.twitter-time {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #999;
+	text-align: right;
+	display: block;
+	font-weight: bold !important;
+	margin-top: 2px;
+}
+
+.twitter-time a {
+	font-weight: bold !important;
+	color: #999;
+}
+
+.twitter-time-twitter {
+	color: #64BFE3;
+}
+
+.twitter-time a:hover {
+	color: #666 !important;
+}
+
+#twitter-bottom {
+	margin-top: -1px;
+	width: 280px;
+	height: 49px;
+	background: url(http://static.tricky.nu/tumblr/images/twitter-bottom.gif) top left no-repeat;
+}
+
+.twitter-post {
+	color: #888;
+}
+
+#previouslink {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.regular img {
+	max-width: 500px;
+}
+
+#content .meta-date {
+	color: #bababa !important;
+	font-weight: 700;
+	font-size:11px;
+	text-transform:uppercase;
+}
+
+#content .meta-notes {
+	position:absolute;
+	right:-10px;
+	top:0;
+	height:25px;
+	display:block;
+	color:#fff;
+	text-align:center;
+	font-size:14px;
+	padding-top:12px;
+}
+
+#content .meta-notes .note-wrapper {
+	display:block;
+	height:25px;
+	overflow:hidden;
+}
+
+#content .meta-notes .note-heart {
+	display:block;
+	background:url(http://static.tumblr.com/90clxbz/aVNnosgw0/note-tag-start-sm-hover.png) top left repeat-x;
+	background-size:44px auto;
+	float:left;
+	width:44px;
+	height:54px;
+}
+
+#content .meta-notes .note-middle {
+	display:block;
+	background:url(http://static.tricky.nu/tumblr/images/note-tag-middle-sm.png) top left repeat-x;
+	background-size:7px 26px;
+	height:26px;
+	float:left;
+	padding:0 6px 0 0;
+	overflow:hidden;
+}
+
+#content .meta-notes .note-middle .note-count {
+	line-height:23px;
+	display:block;
+	float:left;
+	margin-right:5px;
+	font-size:14px;
+}
+
+
+#content .meta-notes .custom-like-button {
+	position: relative;
+	display: block;
+	float:left;
+	width:44px;
+	height:26px;
+	cursor: pointer;
+}
+
+/* class for the Tumblr Like Button iframe */
+#content .meta-notes .like_button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+}
+
+/* Force iframe to fill button */
+#content .meta-notes .like_button iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
+/* class for Our Like Button */
+#content .meta-notes .our_button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+	display:block;
+	background:url(http://static.tumblr.com/90clxbz/VW2noshod/note-tag-start-sm-hover.png) top left repeat-x;
+	background-size:44px auto;
+	float:left;
+}
+
+#content .meta-notes .like_button:hover + 
+.our_button, #content .meta-notes .like_button.liked + .our_button {
+  background-position:0 -26px;
+}
+
+#content .note-permalink {
+	font-size:10px;
+	line-height:25px;
+	color: #fff !important;
+}
+
+#content .note-permalink:hover, 
+#content .meta-notes .note-permalink:hover .note-middle, 
+#content .meta-notes .note-permalink:hover .note-middle .note-count,  
+#content .meta-notes .note-permalink .note-middle .note-count:hover {
+	color:#555;
+}
+
+#content .meta-notes .note-end {
+	display:block;
+	background:url(http://static.tricky.nu/tumblr/images/note-tag-end-sm.png) top left repeat-x;
+	background-size:11px 26px;
+	width:10px;
+	height:26px;
+	float:left;
+}
+
+#content .meta-date:hover { color: #777 !important; }
+
+#content .meta-notes:hover { color:#828283 !important; }
+
+.notes { margin-top: 25px; }
+
+.notes li, .notes p {
+	list-style-type: none;
+	margin: 15px 10px;
+	font-size: 11px;
+	padding: 1px 5px;
+	text-transform: uppercase;
+	background: rgb(235, 233, 229); 
+	background: rgba(235, 233, 229, 0.4);
+	font-weight: 600;
+}
+
+.notes p {
+	margin:15px 0;
+}
+
+.notes li a, .notes p a {
+	color: #999;
+	font-weight: 600;
+}
+
+.notes li a:hover, .notes p a:hover {
+	color: #555;
+	font-weight: 600;
+}
+
+.notes li a img {
+	vertical-align: middle;
+	float:left;
+	margin-right:10px;
+}
+
+.notes .avatar{ display:none; }
+
+.no_change {
+	list-style-type: none;
+}
+
+.star1 {
+	background: url(http://static.tricky.nu/tumblr/images/star1.png) no-repeat left 6px;
+	padding-left: 15px;
+	background-size:9px 9px;
+}
+
+.star2 {
+	background: url(http://static.tricky.nu/tumblr/images/star2.png) no-repeat left 6px;
+	padding-left: 15px;
+	background-size:9px 9px;
+}
+
+.star3 {
+	background: url(http://static.tricky.nu/tumblr/images/star3.png) no-repeat left 6px;
+	padding-left: 15px;
+	background-size:9px 9px;
+}
+
+.star4 {
+	background: url(http://static.tricky.nu/tumblr/images/star4.png) no-repeat left 6px;
+	padding-left: 15px;
+	background-size:9px 9px;
+}
+
+.star5 {
+	background: url(http://static.tricky.nu/tumblr/images/star5.png) no-repeat left 6px;
+	padding-left: 15px;
+	background-size:9px 9px;
+}
+
+#search input {
+	color: #ccc;
+	font-size: 20px;
+	border: 1px solid #fff;
+	height: 25px;
+	width: 180px;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	font-weight: 300px !important;
+	background:#fff url(http://static.tricky.nu/tumblr/images/search.gif) no-repeat 5px center;
+	padding-left: 23px;
+	margin-left:90px;
+}
+
+/* ------------------ girl */
+
+.pics { text-align:center; }
+
+.pics ul { margin:0 auto !important; width:470px; }
+
+.layouts {
+    position: relative;
+    visibility: hidden;
+    left: -5000px;
+}
+
+.pics li, .layouts li { padding:5px 17px; float:left; }
+
+.pics img, .layouts img { border:1px solid #999 !important; }
+
+.next {
+    background:url(http://static.tricky.nu/tumblr/images/arrow2.png) no-repeat center center;
+    width:16px;
+    height:100px;
+    display:block;
+    float:right;
+}
+
+.next:hover, .prev:hover{ opacity:.5; }
+
+.prev {
+    background:url(http://static.tricky.nu/tumblr/images/arrow1.png) no-repeat center center;
+    width:16px;
+    height:100px;
+    display:block;
+    float:left;
+}
+
+#layouts ul { margin:0 !important; }
+
+#layouts li { border:1px solid #999 !important;margin:2px 3px 8px 0px;float:left; }
+
+.four { margin:0 !important; }
+
+.four li { margin:10px;display:inline;line-height:25px; }
+
+
+/* ------------------ sides */
+#sides #content {
+    width:655px;
+    margin:180px 0 0 40px;
+}
+
+#sides .post {
+    width: 560px;
+    padding:70px 0 0 6px;
+    padding: 50px 30px 5px 30px;
+	background:#f1eeee url(http://static.tricky.nu/tumblr/images/post-bg.png) 0 0 repeat;
+	border:3px solid rgba(255, 255, 255, 0.8);
+	border:3px solid rgba(255, 255, 255);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#sides.girl .post ul.images-list {
+	margin:30px auto;
+	overflow:hidden;
+	width:545px;
+}
+
+#sides.site .post ul {
+	margin:30px auto;
+	overflow:hidden;
+	width:524px;
+}
+
+#sides .post ul { margin:0; }
+
+#sides #side {
+	left:755px !important;
+}
+
+#sides ul .title {
+    color:#64BFE3;
+    font-weight:bold;
+}
+
+#sides.site .images-list li {
+	margin:8px 30px;
+}
+
+#sides.girl .images-list li {
+	margin:10px;
+}
+
+#sides  .images-list img { border:1px solid #ccc !important; }
+
+#sides  .images-list li { margin:2px 6px;float:left; }
+
+#sides  .text-list {
+    width:430px;
+    float:left;
+    margin-left:6px;
+}
+
+#sides  .text-list-girl {
+    float:left;
+    margin:2px 6px 2px 6px;
+}
+
+#sides  .text-list li, #sides  .text-list-girl li {
+    display:inline !important;
+    float:none !important;
+    margin:2px 2px 2px 0px!important;
+    line-height:23px !important;
+}
+
+#sides #footer { margin:5px 0 0 30px; }
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+    #content .meta-notes .note-heart, #content .meta-notes .our_button{
+		background:url(http://static.tumblr.com/90clxbz/Q4Snosgus/note-tag-start-hover.png) top left no-repeat;
+		background-size:37px 51px;
+		width:37px;
+	}
+	 #content .meta-notes .custom-like-button{
+		width:37px;
+	}
+	
+	#content .meta-notes .like_button:hover + .our_button, #content .meta-notes .like_button.liked + .our_button  {
+	  background-position:0 -26px;
+	}
+	
+	#content .meta-notes .note-middle{
+		display:block;
+		background:url(http://static.tricky.nu/tumblr/images/note-tag-middle.png) top left repeat-x;
+		background-size:6px 25px;
+		padding:0 6px 0 6px;
+	}
+
+	#content .meta-notes .note-end{
+		display:block;
+		background:url(http://static.tricky.nu/tumblr/images/note-tag-end.png) top left repeat-x;
+		background-size:10px 25px;
+	}
+}
+
+
+@media (min-width: 1085px) {
+	#content{
+		width:600px;
+	}
+
+
+	#side{
+		left:720px;
+	}
+
+
+	.string-bg{
+		left:220px;
+	}
+}
+
+
+
+@media (min-width: 1199px) {
+	#content{
+		width:700px;
+	}
+
+
+	#side{
+		left:820px;
+	}
+
+
+	.string-bg{
+		left:320px;
+	}
+}
+
+
+@media (min-width: 1286px) {
+	#content{
+		width:800px;
+	}
+
+
+	#side{
+		left:970px;
+	}
+
+
+	.string-bg{
+		left:470px;
+	}
+	
+}
+
+
+@media (min-width: 1287px) {
+	#container{
+		
+	}
+
+	#content{
+		width:800px;
+	}
+
+
+	#side{
+		left:970px;
+	}
+
+
+	.string-bg{
+		left:470px;
+	}
+}
